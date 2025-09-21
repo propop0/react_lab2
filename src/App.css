@@ -9,23 +9,34 @@ body, html, #root {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #7c707a;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
-.profile-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.Profile {
+  background-color: #ecd5eb;
+  border-radius: 10%;
+  box-shadow: 7px 10px 10px rgba(77, 50, 74, 0.897);
   padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
-  width: 300px;
+  width: 250px;
+  color: #3e4d83;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
-.product-card img {
+.Profile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(247, 133, 241, 0.704);
+  cursor: pointer;
+}
+
+.Profile img {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 70%;
+  margin-bottom: 15px;
 }
